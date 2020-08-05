@@ -1,8 +1,8 @@
 /*
  * Globals
  */
- @import url('<link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap" rel="stylesheet">');
- @import url('<link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Permanent+Marker&display=swap" rel="stylesheet">');
+ @import url('href="https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap" rel="stylesheet"');
+ @import url('href="https://fonts.googleapis.com/css2?family=Montserrat&family=Permanent+Marker&display=swap" rel="stylesheet"');
 
 /* Links */
 a,
@@ -18,10 +18,11 @@ body{
 .btn-secondary,
 .btn-secondary:hover,
 .btn-secondary:focus {
-  color: #333;
+  color: #c60000;
   text-shadow: none; /* Prevent inheritance from `body` */
   background-color: #fff;
   border: .05rem solid #fff;
+  
 }
 
 
@@ -58,6 +59,7 @@ body {
 .masthead-brand {
   margin-bottom: 0;
   font-family: 'Permanent Marker', cursive;
+
 }
 
 .nav-masthead .nav-link {
@@ -100,10 +102,18 @@ body {
 }
 .cover-heading{
   font-family: 'Montserrat', sans-serif;
+
+  animation: backInDown;
+  animation-duration: 2s;
 }
 .cover .btn-lg {
   padding: .75rem 1.25rem;
   font-weight: 700;
+}
+.lead{
+  animation: backInUp;
+  animation-duration: 2s;
+  
 }
 
 
@@ -112,5 +122,36 @@ body {
  */
 .mastfoot {
   color: rgba(255, 255, 255, .5);
+  font-size: small;
 }
+
+@media (min-width: 320px) {
+  .mastfoot{
+    color: white;
+    font-size: x-small;
+    
+  }
+}
+
+@media (min-width: 320px){
+  .cover-heading{
+    font-size: 30px;
+    padding-bottom: 15px;
+    text-align: center;
+  }
+}
+
+@media (min-width: 320px){
+  .lead{
+    font-size: 10px;
+    padding-bottom: 15px;
+  }
+}
+
+@media (max-width: 1080px){
+  .lead{
+    font-size: larger;
+  }
+}
+
 

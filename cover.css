@@ -1,13 +1,17 @@
 /*
  * Globals
  */
- @import url('<link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap" rel="stylesheet">')
+ @import url('<link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap" rel="stylesheet">');
+ @import url('<link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Permanent+Marker&display=swap" rel="stylesheet">');
 
 /* Links */
 a,
 a:focus,
 a:hover {
   color: #fff;
+}
+body{
+  font-family: 'Montserrat', sans-serif;
 }
 
 /* Custom default button */
@@ -93,6 +97,9 @@ body {
  */
 .cover {
   padding: 0 1.5rem;
+}
+.cover-heading{
+  font-family: 'Montserrat', sans-serif;
 }
 .cover .btn-lg {
   padding: .75rem 1.25rem;

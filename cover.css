@@ -1,6 +1,7 @@
 /*
  * Globals
  */
+ @import url('<link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap" rel="stylesheet">')
 
 /* Links */
 a,
@@ -52,10 +53,11 @@ body {
 
 .masthead-brand {
   margin-bottom: 0;
+  font-family: 'Permanent Marker', cursive;
 }
 
 .nav-masthead .nav-link {
-  padding: .25rem 0;
+  padding: .15rem 0;
   font-weight: 700;
   color: rgba(255, 255, 255, .5);
   background-color: transparent;
@@ -104,3 +106,4 @@ body {
 .mastfoot {
   color: rgba(255, 255, 255, .5);
 }
+

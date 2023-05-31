@@ -79,9 +79,8 @@ const PortfolioTwo = () => {
           </article>
         ))}
       </div>
-      {/* End .grid-item */}
+
       <div></div>
-      {/* End .grid-item */}
     </>
   );
 };

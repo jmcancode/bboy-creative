@@ -174,11 +174,11 @@ const HomeAgency = () => {
                         className="fz-18"
                         style={{ maxWidth: "30rem", color: "#777" }}
                       >
-                        We help our client succeed by custom applications that
-                        address their unique business needs. We are a team of
-                        highly skilled developers, designers, and strategists
-                        who work together to create successful solutions for our
-                        clients.
+                        We help our clients succeed by building custom
+                        applications that address their unique business needs.
+                        We are a team of highly skilled developers, designers,
+                        and strategists who work together to create successful
+                        solutions for our clients.
                       </p>
                       <p
                         className="fz-18"

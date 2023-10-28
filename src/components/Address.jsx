@@ -24,10 +24,7 @@ const Address = () => {
         {/* <!--Spacer--> */}
         <div className="ptf-spacer" style={{ "--ptf-xxl": "1.25rem" }}></div>
         <p className="fz-20 lh-1p5 has-black-color">
-          <a href="mailto:hello@moonex.co">
-            hello@moonex.co
-            <br />
-          </a>
+          
           <a href="mailto:jm@bboycreative.com">jm@bboycreative.com</a>
         </p>
       </div>

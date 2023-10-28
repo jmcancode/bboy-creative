@@ -16,6 +16,19 @@ const ContactForm = () => {
   ]);
 
   const onSubmit = async (e) => {
+    // if there are blank fields, don't submit
+    if (
+      name === "" ||
+      organization === "" ||
+      email === "" ||
+      projectGoal === "" ||
+      timeline === "" ||
+      budget === ""
+    ) {
+      alert("Please fill out all fields.");
+      return;
+    }
+
     e.preventDefault();
 
     const docRef = doc(db, "contacts", "prospects");

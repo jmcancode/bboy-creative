@@ -1,6 +1,4 @@
 import React from "react";
-import { Tooltip } from "react-tooltip";
-import { Link } from "react-router-dom";
 
 const portfolioContent = [
   {

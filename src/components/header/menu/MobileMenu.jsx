@@ -1,6 +1,5 @@
 import React from "react";
 import { Link } from "react-router-dom";
-
 import { Menu, MenuItem, SubMenu, Sidebar } from "react-pro-sidebar";
 import Social from "../../social/Social";
 // import "react-pro-sidebar/dist/css/styles.css";
@@ -59,7 +58,11 @@ const MobileMenu = () => {
           <Sidebar>
             <Menu className="sidebar-menu_wrapper">
               {menuContent.map((item, i) => (
-                <SubMenu title={item?.name || "Learn More"} key={i}>
+                <SubMenu
+                  key={i}
+                  style={{ backgroundColor: "#c60000", color: "#fff" }}
+                  label={item?.name || "Learn More"}
+                >
                   {item.dropDownItems.map((val, i) => (
                     <MenuItem key={i}>
                       <Link to={val.routerPath}>{val.name}</Link>

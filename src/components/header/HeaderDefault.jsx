@@ -39,14 +39,14 @@ const HeaderDefault = () => {
                   src={require("../../assets/img/bboyTextLogo.png")}
                   alt="bboy-logo black"
                   loading="lazy"
-                  style={{ width: "150px" }}
+                  style={{ width: "120px" }}
                 />
                 <img
                   className="white"
                   src={require("../../assets/img/bboyTextLogo.png")}
                   alt="bboy-logo black"
                   loading="lazy"
-                  style={{ width: "150px" }}
+                  style={{ width: "120px" }}
                 />
               </Link>
               {/* <!--Navigation--> */}

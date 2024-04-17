@@ -1,5 +1,5 @@
 import React from "react";
-import { Link } from "react-router-dom";
+
 const portfolioContent = [
   {
     cat: "Mobile App (iOS & Web)",
@@ -75,15 +75,11 @@ const PortfolioTwo = () => {
         {/* <!--Portfolio Item--> */}
         {portfolioContent.map((val, i) => (
           <article
-            onClick={() => {
-              console.log(val.title);
-            }}
             className="ptf-work ptf-work--style-4"
             data-tip
             data-for={val.dataId}
             key={i}
           >
-            <Link className="ptf-work__link" to="/works-showcase"></Link>
             <div className="ptf-work__category">{val.cat}</div>
             <h4 className="ptf-work__title">{val.title}</h4>
             <div className="ptf-work__date">{val.date}</div>

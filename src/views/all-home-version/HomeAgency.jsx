@@ -16,6 +16,9 @@ const HomeAgency = () => {
     <div className="ptf-site-wrapper animsition ptf-is--home-agency">
       <Helmet>
         <title>bboy creative - Mobile, Web, and Strategy</title>
+        <description>
+          Unique problems require custom solutions and we are here to help you.
+        </description>
       </Helmet>
       {/* End Page SEO Content */}
 

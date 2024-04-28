@@ -45,7 +45,7 @@ const HeaderAgency = () => {
                   src={require("../../assets/img/bboyTextLogo.png")}
                   alt="bboy logo"
                   loading="lazy"
-                  style={{ width: "120px" }}
+                  style={{ width: "100px" }}
                 />
               </Link>
               {/* <!--Navigation--> */}

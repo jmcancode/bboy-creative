@@ -5,7 +5,7 @@ import VisibilitySensor from "react-visibility-sensor";
 const counterUpContent = [
   {
     startCount: "0",
-    endCount: "125",
+    endCount: "95",
     metaText1: "HAPPY CLIENTS",
     metaText2: "IN 13 YEARS",
     animationDelay: "100",
@@ -13,7 +13,7 @@ const counterUpContent = [
   },
   {
     startCount: "0",
-    endCount: "265",
+    endCount: "165",
     metaText1: "PROJECTS COMPLETED AROUND",
     metaText2: "THE WORLD",
     animationDelay: "200",

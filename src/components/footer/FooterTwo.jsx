@@ -10,13 +10,10 @@ const FooterTwo = () => {
           <div className="ptf-widget ptf-widget-contacts has-white-color">
             <ul>
               <li>
-                <span>Address</span>
-                <p>110 E. Houston St</p>
+                <span>HQ</span>
+                <p>San Antonio, Texas</p>
               </li>
-              <li>
-                <span>Phone</span>
-                <a href="tel:12104544340">+1 (210) 454-4340</a>
-              </li>
+
               <li>
                 <span>Email</span>
                 <a href="mailto:jm@bboycreative.com">jm@bboycreative.com</a>

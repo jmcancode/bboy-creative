@@ -8,7 +8,7 @@ const InstagramFeed = () => {
       {instagramFeed.map((icon, i) => (
         <li key={i}>
           <a
-            href="https://www.instagram.com/"
+            href="https://www.instagram.com/bboycreatve.io"
             target="_blank"
             rel="noopener noreferrer"
           >

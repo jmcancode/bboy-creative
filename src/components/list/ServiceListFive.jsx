@@ -1,12 +1,11 @@
 import React from "react";
-import { Link } from "react-router-dom";
 
 const serviceList = [
-  { name: "Branding", number: "17" },
-  { name: " Interaction Design", number: "54" },
-  { name: "Motion", number: "6" },
-  { name: "Illustration", number: "9" },
-  { name: "Photography", number: "25" },
+  { name: "Mobile Development", number: "10" },
+  { name: " Web Development", number: "9" },
+  { name: "App Treatments", number: "60" },
+  { name: "UX Research", number: "29" },
+  { name: "Prototyping", number: "25" },
 ];
 
 const ServiceListFive = () => {
@@ -20,10 +19,10 @@ const ServiceListFive = () => {
     >
       {serviceList.map((val, i) => (
         <li key={i}>
-          <Link to="/service-details">
+          <div>
             {val.name}
             <span>{val.number}</span>
-          </Link>
+          </div>
         </li>
       ))}
     </ul>

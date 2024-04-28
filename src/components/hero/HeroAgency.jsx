@@ -66,10 +66,10 @@ const HeroAgency = () => {
         <div className="ptf-showcase-image image-2">
           <div className="ptf-showcase-slide">
             <div className="container">
-              <h1 className="fz-100 fz-90--lg lh-1 has-white-color text-center">
+              <h4 className="fz-100 fz-90--lg lh-1 has-white-color text-center">
                 <span className="has-accent-1">Agile</span> Design <br />&
                 Development
-              </h1>
+              </h4>
               {/* <!--Spacer--> */}
               <div
                 className="ptf-spacer"

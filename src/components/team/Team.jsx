@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 const teamContent = [
   {
@@ -6,43 +7,8 @@ const teamContent = [
     img: "team-1",
     title: "Jon-Michael Narvaez",
     designation: "Chief Creative & Senior Developer",
+    routerLink: "https://www.linkedin.com/in/jmcancode/",
   },
-  // {
-  //   delayAnimation: "100",
-  //   img: "team-2",
-  //   title: "Robert Downey Jr",
-  //   designation: "CO Founder",
-  // },
-  // {
-  //   delayAnimation: "200",
-  //   img: "team-3",
-  //   title: "Laura Lorwence",
-  //   designation: "Project Management",
-  // },
-  // {
-  //   delayAnimation: "300",
-  //   img: "team-4",
-  //   title: "David De Berg",
-  //   designation: "Lead of Technical",
-  // },
-  // {
-  //   delayAnimation: "0",
-  //   img: "team-5",
-  //   title: "Elena Stephan",
-  //   designation: "SEO/Marketing",
-  // },
-  // {
-  //   delayAnimation: "100",
-  //   img: "team-6",
-  //   title: "Andy Robertson",
-  //   designation: "Content Writer",
-  // },
-  // {
-  //   delayAnimation: "200",
-  //   img: "new-member",
-  //   title: "",
-  //   designation: "",
-  // },
 ];
 
 const Team = () => {
@@ -59,7 +25,11 @@ const Team = () => {
           <div className="ptf-team-member ptf-team-member--has-effect">
             <div className="ptf-team-member__avatar">
               <div className="shadow-effect"></div>
-              <a href="/#">
+              <Link
+                to={val.routerLink}
+                target="_blank"
+                rel="noopener noreferrer"
+              >
                 {" "}
                 <img
                   src={require(`../../assets/img/root/team/${val.img}.jpg`)}
@@ -70,7 +40,7 @@ const Team = () => {
                     height: "100%",
                   }}
                 />
-              </a>
+              </Link>
             </div>
             <div className="ptf-team-member__content">
               <h6 className="ptf-team-member__name">

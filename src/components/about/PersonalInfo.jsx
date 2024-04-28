@@ -14,8 +14,8 @@ const PersonalInfo = () => {
           className="fz-24 has-black-color has-secondary-font"
           style={{ maxWidth: "15.3125rem" }}
         >
-          Work for money and design for love! I’m Bruno, an UI/UX Interaction
-          Designer based in Poland.
+          Work for money and design for love! I’m JM, a full-stack designer,
+          developer, and product designer.
         </p>
       </div>
       {/* End .ptf-animated-block */}

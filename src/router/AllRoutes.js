@@ -11,6 +11,7 @@ import WorksListing from "../views/inner-pages/portfolio/WorksListing";
 import AboutMe from "../views/inner-pages/about/AboutMe";
 import TermsOfService from "../views/inner-pages/TermsOfService";
 import PrivacyPolicy from "../views/inner-pages/PrivacyPolicy";
+import Blog from "../components/blog/Blog";
 
 const AllRoutes = () => {
   return (
@@ -21,6 +22,7 @@ const AllRoutes = () => {
         <Route path="/faq" element={<Faq />} />
         <Route path="/works-showcase" element={<WorksShowcase />} />
         <Route path="/works-listing" element={<WorksListing />} />
+        <Route path="/blog" element={<Blog />} />
         <Route path="/about-me" element={<AboutMe />} />
         <Route path="/terms-of-service" element={<TermsOfService />} />
         <Route path="/privacy-policy" element={<PrivacyPolicy />} />

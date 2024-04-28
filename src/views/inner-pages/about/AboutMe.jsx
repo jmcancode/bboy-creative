@@ -1,22 +1,18 @@
 import React from "react";
 import { Helmet } from "react-helmet";
 import BrandFour from "../../../components/brand/BrandFour";
-import BrandThree from "../../../components/brand/BrandThree";
-import FooterFour from "../../../components/footer/FooterFour";
 import HeaderDefault from "../../../components/header/HeaderDefault";
-import InstagramFeed from "../../../components/InstagramFeed";
 import ServiceListFive from "../../../components/list/ServiceListFive";
 import Resume from "../../../components/Resume";
 import SocialTwo from "../../../components/social/SocialTwo";
-import TestimonialThree from "../../../components/testimonial/TestimonialThree";
-
-const avatar = "assets/img/about-me-main-image.jpg";
+import FooterTwo from "../../../components/footer/FooterTwo";
+import { Link } from "react-router-dom";
 
 const AboutMe = () => {
   return (
     <div className="ptf-site-wrapper animsition  ptf-is--about-me">
       <Helmet>
-        <title>bboy creative - AboutMe</title>
+        <title>bboy creative - meet JM</title>
       </Helmet>
       {/* End Page SEO Content */}
       <div className="ptf-site-wrapper__inner">
@@ -48,27 +44,15 @@ const AboutMe = () => {
                         {/* <!--Mask Image--> */}
                         <div className="ptf-mask-image">
                           <img
-                            src="assets/img/root/about-me/about-me-main-image-layer-2.png"
+                            src={require("../../../assets/img/about-me-main-image.png")}
                             alt="layer"
                             loading="lazy"
-                            style={{ zIndex: "2" }}
-                          />
-                          <img
-                            src="assets/img/root/about-me/about-me-main-image-mask.png"
-                            alt="layer"
-                            loading="lazy"
-                            className="lay"
                             style={{
-                              zIndex: "1",
+                              zIndex: "2",
+                              height: "60em",
+                              width: "60em",
+                              objectFit: "cover",
                             }}
-                            srcSet={avatar}
-                          />
-                          {/* End about main image for profile */}
-
-                          <img
-                            src="assets/img/root/about-me/about-me-main-image-layer-1.png"
-                            alt="layer"
-                            loading="lazy"
                           />
                         </div>
                       </div>
@@ -87,7 +71,7 @@ const AboutMe = () => {
                       data-aos-delay="0"
                     >
                       <h2 className="h1 large-heading has-secondary-font fw-normal">
-                        Bruno Erdison
+                        Jon-Michael "JM" Narvaez
                       </h2>
                     </div>
                     {/* <!--Spacer--> */}
@@ -102,8 +86,8 @@ const AboutMe = () => {
                       data-aos-delay="100"
                     >
                       <p className="fz-24 text-uppercase">
-                        UI/UX Interaction <br />
-                        Designer
+                        Senior Full-Stack <br />
+                        Engineer
                       </p>
                     </div>
                     {/* <!--Spacer--> */}
@@ -129,9 +113,9 @@ const AboutMe = () => {
                         style={{ "--ptf-xxl": "1.875rem" }}
                       ></div>
                       <p className="fz-30 has-black-color has-secondary-font">
-                        Work for money & design for love! <br />
-                        I’m Bruno, an UI/UX Interaction <br />
-                        Designer based in Poland.
+                        Creative problem solver with over <br />
+                        10 years of entrepreneurship & <br />5 years of software
+                        engineering.
                       </p>
                     </div>
                     {/* <!--Spacer--> */}
@@ -154,12 +138,12 @@ const AboutMe = () => {
                         style={{ "--ptf-xxl": "1.875rem" }}
                       ></div>
                       <p className="fz-30 has-black-color has-secondary-font">
-                        Warsaw, Poland <br />
+                        San Antonio, Texas <br />
                         <a href="mailto:hello@brunoerdison.com">
-                          hello@brunoerdison.com
+                          jm@bboycreative.com
                         </a>
                         <br />
-                        <a href="tel:+6835688986">+68 3568 89 86</a>
+                        <a href="tel:+6835688986">+1 210 454 4340</a>
                       </p>
                       {/* <!--Spacer--> */}
                       <div
@@ -340,47 +324,6 @@ const AboutMe = () => {
                 className="ptf-spacer"
                 style={{ "--ptf-xxl": "7.5rem", "--ptf-md": "3.75rem" }}
               ></div>
-
-              {/*=============================================
-                Start Testimonial  
-                ============================================== */}
-              <div className="container-xxl">
-                {/* <!--Animated Block--> */}
-                <div
-                  className="ptf-animated-block"
-                  data-aos="fade"
-                  data-aos-delay="0"
-                >
-                  {/* <!--Content Slider--> */}
-                  <div className="ptf-content-slider swiper-container">
-                    {/* <!--Testimonial--> */}
-                    <TestimonialThree />
-                  </div>
-                </div>
-                {/* End Testimonial */}
-              </div>
-              {/* End .container-xxl */}
-
-              <div className="container-xxl">
-                {/* <!--Spacer--> */}
-                <div
-                  className="ptf-spacer"
-                  style={{ "--ptf-xxl": "12rem", "--ptf-md": "9.75rem" }}
-                ></div>
-                <div className="row">
-                  <div className="col-xl-10 offset-xl-1">
-                    {/* <!--Clients List--> */}
-                    <BrandThree />
-                  </div>
-                </div>
-              </div>
-              {/* End .container-xxl */}
-
-              {/* <!--Spacer--> */}
-              <div
-                className="ptf-spacer"
-                style={{ "--ptf-xxl": "10rem", "--ptf-md": "5rem" }}
-              ></div>
             </section>
             {/* End mulitblock */}
 
@@ -395,7 +338,9 @@ const AboutMe = () => {
                   data-aos-delay="0"
                 >
                   <h2 className="has-secondary-font fw-normal text-center">
-                    <a href="/#">@brunoerdison</a>
+                    <Link to="https://www.instagram.com/jmcancode">
+                      @bboycreative.io
+                    </Link>
                   </h2>
                 </div>
 
@@ -403,23 +348,6 @@ const AboutMe = () => {
                 <div
                   className="ptf-spacer"
                   style={{ "--ptf-xxl": "3.125rem", "--ptf-md": "1.5625rem" }}
-                ></div>
-
-                {/* <!--Animated Block--> */}
-                <div
-                  className="ptf-animated-block"
-                  data-aos="fade"
-                  data-aos-delay="100"
-                >
-                  {/* <!--Instagram Feed--> */}
-                  <InstagramFeed />
-                </div>
-                {/* End ptf-instagram-feed */}
-
-                {/* <!--Spacer--> */}
-                <div
-                  className="ptf-spacer"
-                  style={{ "--ptf-xxl": "10rem", "--ptf-md": "5rem" }}
                 ></div>
               </div>
             </section>
@@ -432,7 +360,7 @@ const AboutMe = () => {
       {/* <!--Footer--> */}
       <footer className="ptf-footer ptf-footer--style-6">
         <div className="container-xxl">
-          <FooterFour />
+          <FooterTwo />
         </div>
       </footer>
     </div>

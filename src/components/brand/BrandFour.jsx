@@ -1,31 +1,80 @@
 import React from "react";
+import { FaFigma, FaHandshake } from "react-icons/fa";
+import { IoLogoReact, IoLogoFirebase } from "react-icons/io5";
+import { SiAdobexd, SiAdobeindesign } from "react-icons/si";
 
 const brandContent = [
-  { dealyAnimation: "0", icon: "image-1", percentage: "90", title: "Figma" },
-  { dealyAnimation: "100", icon: "image-2", percentage: "95", title: "Sketch" },
+  {
+    dealyAnimation: "0",
+    icon: (
+      <IoLogoReact
+        style={{
+          fontSize: "90px",
+          color: "#61DBFB",
+        }}
+      />
+    ),
+    percentage: "95",
+    title: "React Native Cli",
+  },
+  {
+    dealyAnimation: "100",
+    icon: <IoLogoFirebase style={{ fontSize: "90px", color: "#FFCA28" }} />,
+    percentage: "95",
+    title: "Firebase",
+  },
   {
     dealyAnimation: "200",
-    icon: "image-3",
+    icon: (
+      <SiAdobexd
+        style={{
+          fontSize: "90px",
+          color: "#FF26BE",
+        }}
+      />
+    ),
     percentage: "82",
     title: "Adobe XD",
   },
   {
     dealyAnimation: "300",
-    icon: "image-4",
-    percentage: "93",
-    title: "InvisionApp",
+    icon: (
+      <FaFigma
+        style={{
+          fontSize: "90px",
+          color: "#F24E1E",
+        }}
+      />
+    ),
+    percentage: "85",
+    title: "Figma",
   },
   {
     dealyAnimation: "400",
-    icon: "image-5",
-    percentage: "76",
-    title: "Bootstrap",
+    icon: (
+      <SiAdobeindesign
+        style={{
+          fontSize: "90px",
+          color: "#FF3366",
+        }}
+      />
+    ),
+    percentage: "85",
+    title: "Adobe InDesign",
   },
   {
     dealyAnimation: "500",
-    icon: "image-6",
-    percentage: "88",
-    title: "HTML5/CSS",
+    icon: (
+      <FaHandshake
+        style={{
+          fontSize: "90px",
+
+          color: "#c60000",
+        }}
+      />
+    ),
+    percentage: "98",
+    title: "Communication",
   },
 ];
 
@@ -47,11 +96,14 @@ const BrandFour = () => {
             >
               <div className="ptf-advantage-box__content">
                 <div className="ptf-advantage-box__image">
-                  <img
-                    src={`assets/img/root/advantages/${val.icon}.png`}
-                    alt="Figma"
-                    loading="lazy"
-                  />
+                  {typeof val.icon === "string" ? (
+                    <img
+                      src={`assets/images/brand/${val.icon}.png`}
+                      alt="brand"
+                    />
+                  ) : (
+                    val.icon
+                  )}
                 </div>
                 <div className="ptf-advantage-box__value">{val.percentage}</div>
               </div>

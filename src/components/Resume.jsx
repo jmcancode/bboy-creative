@@ -2,64 +2,48 @@ import React from "react";
 
 const resumeContent = [
   {
-    year: "2014",
+    year: "2013 & 2019",
     delayAnimation: "",
     infoContent: [
       {
-        title: " Bachelor Degree of Design",
-        subTitle: "RMIT University",
+        title: " Bachelor Degree of Social Science",
+        subTitle: "University of Texas at San Antonio, US",
       },
       {
-        title: "UI/UX Design Certificate",
-        subTitle: " University of Houston, US",
+        title: "Full Stack Development",
+        subTitle: " Zero to Mastery.io, CA",
       },
     ],
   },
   {
-    year: "2015 - 2019",
+    year: "2020 - 2023",
     delayAnimation: "",
     infoContent: [
       {
-        title: "Design Internship",
-        subTitle: "CMC Corporation, UK",
+        title: "Senior React Native Developer",
+        subTitle: "Better Than Vegas, US",
       },
       {
-        title: "Graphic Designer",
-        subTitle: "Tripadvisor Ltd, UK",
+        title: "React Native Developer",
+        subTitle: "Giddy, US",
       },
       {
-        title: "Leader Graphic Design",
-        subTitle: "New Centery Media JSC, UK",
-      },
-      {
-        title: "Web Designer",
-        subTitle: "Freelancer",
-      },
-      {
-        title: "Web Designer/ Author",
-        subTitle: "Envato Market",
+        title: "Senior React Native Developer",
+        subTitle: "J12 Designs, US",
       },
     ],
   },
   {
-    year: "2020 - PRESENT",
+    year: "2019 - PRESENT",
     delayAnimation: "",
     infoContent: [
       {
-        title: "Product Designe Management",
-        subTitle: "Dribbble LLC, US",
+        title: "Chief Creative / Founder",
+        subTitle: "bboy creative llc",
       },
       {
-        title: "Art Director / Co-Founder",
-        subTitle: "Spotify",
-      },
-      {
-        title: "Founder",
-        subTitle: "iDesign Magazine",
-      },
-      {
-        title: "Author of The Book",
-        subTitle: "Work for Money, Design for Love",
+        title: "Design Director / Master Stylist",
+        subTitle: "The Royal Guard - Style Agency",
       },
     ],
   },

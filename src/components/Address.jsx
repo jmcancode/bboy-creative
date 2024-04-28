@@ -9,9 +9,7 @@ const Address = () => {
         {/* <!--Spacer--> */}
         <div className="ptf-spacer" style={{ "--ptf-xxl": "1.25rem" }}></div>
         <p className="fz-20 lh-1p5 has-black-color">
-          110 E. Houston St.
-          <br />
-          San Antonio, Texas, United States, 78205
+          San Antonio, Texas, United States
         </p>
       </div>
 
@@ -24,7 +22,6 @@ const Address = () => {
         {/* <!--Spacer--> */}
         <div className="ptf-spacer" style={{ "--ptf-xxl": "1.25rem" }}></div>
         <p className="fz-20 lh-1p5 has-black-color">
-          
           <a href="mailto:jm@bboycreative.com">jm@bboycreative.com</a>
         </p>
       </div>
@@ -38,7 +35,7 @@ const Address = () => {
         {/* <!--Spacer--> */}
         <div className="ptf-spacer" style={{ "--ptf-xxl": "1.25rem" }}></div>
         <p className="fz-20 lh-1p5 has-black-color">
-          <a href="tel:+5632356565">+1 210.454.4340</a>
+          <a href="tel:+12108031125">+1 210.454.4340</a>
         </p>
       </div>
 

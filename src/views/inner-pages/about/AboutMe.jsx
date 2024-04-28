@@ -338,7 +338,11 @@ const AboutMe = () => {
                   data-aos-delay="0"
                 >
                   <h2 className="has-secondary-font fw-normal text-center">
-                    <Link to="https://www.instagram.com/jmcancode">
+                    <Link
+                      to="https://www.instagram.com/bboycreative.io"
+                      target="_blank"
+                      rel="noreferrer noopener"
+                    >
                       @bboycreative.io
                     </Link>
                   </h2>

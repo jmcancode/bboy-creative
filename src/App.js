@@ -1,48 +1,77 @@
-import React, { useEffect } from "react";
-import AllRoutes from "./router/AllRoutes";
-import AOS from "aos";
+import React from "react";
 import { Helmet } from "react-helmet";
-import AnimatedCursor from "react-animated-cursor";
-// custom css
-import "slick-carousel/slick/slick.css";
-import "slick-carousel/slick/slick-theme.css";
-import "photoswipe/dist/photoswipe.css";
-import "aos/dist/aos.css";
+import { motion } from "framer-motion";
+import "./App.css";
 
 const App = () => {
-  useEffect(() => {
-    AOS.init({
-      duration: 1200,
-    });
-  }, []);
+  const containerVariants = {
+    hidden: { opacity: 0, y: 50 },
+    visible: { opacity: 1, y: 0, transition: { duration: 0.8 } },
+  };
+
+  const staggerContainer = {
+    visible: { transition: { staggerChildren: 0.3 } },
+  };
 
   return (
-    <>
-      <Helmet>
-        <title>bboy creative | Web, Mobile, Strategy</title>
-        <meta
-          name="description"
-          content="bboy creative is a multidisciplinary software agency based in Texas"
-        />
-        <meta
-          name="keywords"
-          content="web, mobile, hybrid apps, react native, firebase, full stack, developer, custom, software"
-        />
-      </Helmet>
-      {/* End React Helmet for SEO */}
-      <AnimatedCursor
-        innerSize={8}
-        outerSize={44}
-        color="220, 53, 69"
-        outerAlpha={0.3}
-        innerScale={0.7}
-        outerScale={1.2}
-      />
-      {/* End Animated Cursor */}
+    <div className="landing-page">
+      {/* First Row: Header */}
+      <motion.div
+        className="header"
+        variants={staggerContainer}
+        initial="hidden"
+        animate="visible"
+      >
+        <motion.h1 className="logo" variants={containerVariants}>
+          BBoy Creative
+        </motion.h1>
+        <motion.div className="social-links" variants={containerVariants}>
+          <a
+            href="https://apps.apple.com/us/developer/jon-michael-narvaez/id1246305819"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Apple
+          </a>
+          <a
+            href="https://www.instagram.com/bboycreative.io/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Instagram
+          </a>
+          <a
+            href="https://www.linkedin.com/in/jmcancode/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            LinkedIn
+          </a>
+        </motion.div>
+      </motion.div>
 
-      <AllRoutes />
-      {/* End All Routes */}
-    </>
+      {/* Second Row: Tagline */}
+      <motion.div
+        variants={containerVariants}
+        initial="hidden"
+        animate="visible"
+      >
+        <p className="tagline">Stylish Software</p>
+        <p className="tagline2">Mobile, Web, & Strategy</p>
+      </motion.div>
+
+      {/* Third Row: Contact */}
+      <motion.div
+        className="contact"
+        variants={containerVariants}
+        initial="hidden"
+        animate="visible"
+      >
+        <p>
+          Email: <a href="mailto:hello@bboycreative.com">jm@bboycreative.com</a>
+        </p>
+      </motion.div>
+    </div>
   );
 };
 

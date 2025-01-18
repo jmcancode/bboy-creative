@@ -1,31 +1,65 @@
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.landing-page {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  justify-content: space-between;
+  height: 100vh;
+  padding: 20px;
+  font-family: Arial, sans-serif;
+  text-align: center;
+  background: #171717; /* Clean, minimal background */
 }
 
-.App-link {
-  color: #61dafb;
+.header {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #fff;
+}
+
+.logo:hover {
+  color: #c60000;
+}
+
+.social-links a {
+  margin-left: 15px;
+  text-decoration: none;
+  color: #fff;
+}
+
+.social-links a:hover {
+  color: #c60000;
+}
+
+.tagline {
+  color: #fff;
+  font-size: 6.2rem;
+  font-weight: 300;
+}
+
+.tagline2 {
+  color: #fff;
+  font-size: 1.2rem;
+  font-weight: 300;
+}
+
+.contact {
+  font-size: 1.2rem;
+  font-weight: 300;
+  color: #777;
+}
+.contact a {
+  text-decoration: none;
+  color: #ffffff;
+}
+.contact a:hover {
+  text-decoration: underline;
+  color: #c60000;
 }
 
 @keyframes App-logo-spin {
